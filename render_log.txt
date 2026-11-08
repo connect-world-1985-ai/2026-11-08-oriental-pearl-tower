@@ -1,0 +1,85 @@
+
+==== run mode=stills 2026-11-08 22:25:22 ====
+22:25:22 Blender 5.2.3 LTS mode=stills frames=[120] scale=50
+Traceback (most recent call last):
+  File "E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\build_oriental_pearl.py", line 753, in <module>
+    main()
+    ~~~~^^
+  File "E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\build_oriental_pearl.py", line 742, in main
+    build_scene()
+    ~~~~~~~~~~~^^
+  File "E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\build_oriental_pearl.py", line 727, in build_scene
+    build_tower(materials)
+    ~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\build_oriental_pearl.py", line 453, in build_tower
+    add_torus(
+    ~~~~~~~~~^
+        f"Deck_{int(z_value)}",
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        materials["deck"],
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\build_oriental_pearl.py", line 223, in add_torus
+    bmesh.ops.create_torus(
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: BMeshOpsModule: operator "create_torus" doesn't exist. Did you mean: 'create_cone'?
+
+
+==== run mode=stills 2026-11-08 22:26:10 ====
+22:26:10 Blender 5.2.3 LTS mode=stills frames=[120] scale=50
+Traceback (most recent call last):
+  File "E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\build_oriental_pearl.py", line 771, in <module>
+    main()
+    ~~~~^^
+  File "E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\build_oriental_pearl.py", line 760, in main
+    build_scene()
+    ~~~~~~~~~~~^^
+  File "E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\build_oriental_pearl.py", line 746, in build_scene
+    build_world()
+    ~~~~~~~~~~~^^
+  File "E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\build_oriental_pearl.py", line 548, in build_world
+    sky.sky_type = "NISHITA"
+    ^^^^^^^^^^^^
+TypeError: bpy_struct: item.attr = val: enum "NISHITA" not found in ('SINGLE_SCATTERING', 'MULTIPLE_SCATTERING', 'PREETHAM', 'HOSEK_WILKIE')
+
+
+==== run mode=stills 2026-11-08 22:26:51 ====
+22:26:51 Blender 5.2.3 LTS mode=stills frames=[120] scale=50
+22:26:51 orbit fcurves set to LINEAR: 3
+22:26:51 render engine=BLENDER_EEVEE samples=16 raytracing=True scale=2
+22:26:51 saved E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\oriental_pearl.blend bytes=455558
+22:26:51 build elapsed 0.21s
+22:26:51 still frame 120 -> E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\preview_frame_0120.png
+22:27:10 still frame 120 done, bytes=454712
+22:27:10 stills elapsed 18.28s for 1 frame(s) at scale 50
+22:27:10 finished
+
+==== run mode=stills 2026-11-08 22:31:31 ====
+22:31:31 Blender 5.2.3 LTS mode=stills frames=[120] scale=100
+22:31:31 orbit fcurves set to LINEAR: 3
+22:31:31 render engine=BLENDER_EEVEE samples=8 raytracing=True scale=4
+22:31:31 saved E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\oriental_pearl.blend bytes=448060
+22:31:31 build elapsed 0.20s
+22:31:31 still frame 120 -> E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\frame_0120.png
+22:31:33 still frame 120 done, bytes=1765315
+22:31:33 stills elapsed 1.63s for 1 frame(s) at scale 100
+22:31:33 finished
+
+==== run mode=all 2026-11-08 22:33:53 ====
+22:33:53 Blender 5.2.3 LTS mode=all frames=[1, 120, 240] scale=100
+22:33:53 orbit fcurves set to LINEAR: 3
+22:33:53 render engine=BLENDER_EEVEE samples=16 raytracing=True scale=4
+22:33:53 saved E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\oriental_pearl.blend bytes=448332
+22:33:53 build elapsed 0.19s
+22:33:53 still frame 1 -> E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\frame_0001.png
+22:33:54 still frame 1 done, bytes=1769939
+22:33:54 still frame 120 -> E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\frame_0120.png
+22:33:55 still frame 120 done, bytes=1748438
+22:33:55 still frame 240 -> E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\frame_0240.png
+22:33:55 still frame 240 done, bytes=1770349
+22:33:55 stills elapsed 1.84s for 3 frame(s) at scale 100
+22:33:55 animation -> E:\Work\2026-11-08-oriental-pearl-blender\2026-11-08-project\oriental_pearl.mp4
+22:34:52 animation elapsed 56.85s bytes=2183764
+22:34:52 finished
